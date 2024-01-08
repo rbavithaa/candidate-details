@@ -15,5 +15,5 @@ function saveCandidateDetails() {
 
 document.getElementById('detailsTable').addEventListener('click', function() {
     // Replace 'URL' with the actual URL of the page you want to open
-    window.open('details.html', '_blank');
+    window.open('Details.html', '_blank');
   });
