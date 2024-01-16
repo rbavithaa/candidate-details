@@ -16,6 +16,6 @@ function validateForm(event) {
       // Continue with form submission or processing
 
       // Open the details table page
-      window.open('details.html', '_blank');
+      window.open('Details.html', '_blank');
     }
   }
