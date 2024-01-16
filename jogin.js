@@ -1,19 +1,21 @@
-function saveCandidateDetails() {
-    // This function can save data or perform other actions before navigating to the details page
-    // For now, it simply sets the URL to the candidate_details.html page
-    var Name = document.getElementById('Name').value;
-    var SerialNo = document.getElementById('SerialNo').value;
-    var LastDate = document.getElementById('LastDate').value;
+function validateForm(event) {
+    // Get form values
+    var name = document.getElementById('Name').value;
+    var serialNo = document.getElementById('SerialNo').value;
+    var lastDate = document.getElementById('LastDate').value;
 
-    // Here, you can save the details before navigating to the details page
-    // For demonstration purposes, this code just updates the URL
-    //var detailsLink = `details.html?name=${Name}&serial=${SerialNo}&lastDate=${LastDate}&age=${Age}&email=${E-mail}&dob=${DOB}&gender=${Gender}`;
-    //window.location.href = detailsLink;
-}
-// Assigning the function to the button click event
-//document.getElementById('viewDetailsBtn').onclick = viewDetails;
+    // Check if any field is empty
+    if (name === '' || serialNo === '' || lastDate === '') {
+      // Display error message
+      document.getElementById('errormessage').innerHTML = 'Please fill in all the fields.';
+      // Prevent form submission
+      event.preventDefault();
+    } else {
+      // Clear any previous error message
+      document.getElementById('errormessage').innerHTML = '';
+      // Continue with form submission or processing
 
-document.getElementById('detailsTable').addEventListener('click', function() {
-    // Replace 'URL' with the actual URL of the page you want to open
-    window.open('Details.html', '_blank');
-  });
+      // Open the details table page
+      window.open('details.html', '_blank');
+    }
+  }
