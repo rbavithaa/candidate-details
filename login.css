@@ -85,7 +85,7 @@ body {
   }
 
   #errormessage {
-    color: black;
+    color: red;
     font-size: large;
     text-align: center;
     text-transform: uppercase;
