@@ -1,17 +1,15 @@
 body {
-  background-color:rgb(129, 98, 151);
-  background-image: linear-gradient(30deg, rgb(174, 97, 219) 12%, transparent 12.5%, transparent 87%, rgb(174, 97, 219) 87.5%, rgb(174, 97, 219)),
-  linear-gradient(150deg, rgb(174, 97, 219) 12%, transparent 12.5%, transparent 87%, rgb(174, 97, 219) 87.5%, rgb(174, 97, 219)),
-  linear-gradient(30deg, rgb(174, 97, 219) 12%, transparent 12.5%, transparent 87%, rgb(174, 97, 219) 87.5%, rgb(174, 97, 219)),
-  linear-gradient(150deg, rgb(174, 97, 219) 12%, transparent 12.5%, transparent 87%, rgb(174, 97, 219) 87.5%, rgb(174, 97, 219)),
-  linear-gradient(60deg, rgb(174, 97, 219) 25%, transparent 25.5%, transparent 75%, rgb(174, 97, 219) 75%, rgb(174, 97, 219)), 
-  linear-gradient(60deg, rgb(174, 97, 219) 25%, transparent 25.5%, transparent 75%, rgb(174, 97, 219) 75%, rgb(174, 97, 219));
-  background-size:80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  background-image: url('backg.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+  margin: 0; /* Remove default margin to cover the entire page */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  overflow: hidden; /* Hide any potential overflow */
+}
 
   .Details {
     max-width: 400px;
